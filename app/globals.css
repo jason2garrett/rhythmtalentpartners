@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 226 30% 97%;
+    --foreground: 226 40% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 226 40% 11%;
+    --primary: 226 56% 8%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 204 84% 47%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 226 22% 93%;
+    --muted-foreground: 226 14% 44%;
+    --accent: 204 72% 93%;
+    --accent-foreground: 204 72% 28%;
+    --border: 226 22% 88%;
+    --input: 226 22% 88%;
+    --ring: 204 84% 47%;
+    --radius: 0.75rem;
+
+    /* Brand gradient (cyan -> purple -> orange -> yellow) */
+    --brand-cyan: #2ba4e8;
+    --brand-purple: #a855e0;
+    --brand-orange: #f0784a;
+    --brand-yellow: #f4bd3a;
+    --brand-gradient: linear-gradient(
+      90deg,
+      var(--brand-cyan) 0%,
+      var(--brand-purple) 38%,
+      var(--brand-orange) 70%,
+      var(--brand-yellow) 100%
+    );
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-secondary/20;
+  }
+}
+
+@layer components {
+  .text-brand-gradient {
+    background-image: var(--brand-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-brand-gradient {
+    background-image: var(--brand-gradient);
+  }
+
+  /* gradient "pulse" accent bar used by section eyebrows */
+  .brand-line {
+    height: 2px;
+    width: 2rem;
+    border-radius: 9999px;
+    background-image: var(--brand-gradient);
+  }
+}
