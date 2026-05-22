@@ -6,9 +6,11 @@ type LogoProps = {
 
 export function LogoMark({ className, id = "rt" }: LogoProps) {
   const gid = `brand-grad-${id}`;
+  const glow = `brand-glow-${id}`;
+  const art = `brand-art-${id}`;
   return (
     <svg
-      viewBox="0 0 200 72"
+      viewBox="0 0 210 72"
       className={className}
       role="img"
       aria-label="Rhythm Talent Partners"
@@ -20,35 +22,43 @@ export function LogoMark({ className, id = "rt" }: LogoProps) {
           <stop offset="70%" stopColor="#f0784a" />
           <stop offset="100%" stopColor="#f4bd3a" />
         </linearGradient>
+        <filter id={glow} x="-20%" y="-40%" width="140%" height="180%">
+          <feGaussianBlur stdDeviation="2.2" />
+        </filter>
+
+        <g
+          id={art}
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          {/* heartbeat / pulse line (full brand gradient) */}
+          <path
+            d="M4 50 H60 L66 50 L70 45 L76 49 L85 18 L92 64 L98 50 H126 L132 50 L137 41 L142 58 L147 50 H206"
+            stroke={`url(#${gid})`}
+            strokeWidth="3"
+          />
+          {/* left person — cyan */}
+          <g stroke="#2ba4e8" strokeWidth="2.5">
+            <circle cx="38" cy="20" r="6.5" />
+            <path d="M28 50 C28 34 48 34 48 50" />
+          </g>
+          {/* center person — purple (taller) */}
+          <g stroke="#a855e0" strokeWidth="2.5">
+            <circle cx="106" cy="16" r="7.5" />
+            <path d="M93 50 C93 31 119 31 119 50" />
+          </g>
+          {/* right person — yellow */}
+          <g stroke="#f4bd3a" strokeWidth="2.5">
+            <circle cx="168" cy="20" r="6.5" />
+            <path d="M158 50 C158 34 178 34 178 50" />
+          </g>
+        </g>
       </defs>
 
-      {/* heartbeat / pulse baseline */}
-      <path
-        d="M2 54 H74 l5 0 4 -20 6 34 6 -28 4 14 H198"
-        fill="none"
-        stroke={`url(#${gid})`}
-        strokeWidth="3.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-
-      {/* left person — cyan */}
-      <g fill="#2ba4e8">
-        <circle cx="44" cy="22" r="8" />
-        <path d="M32 46 a12 12 0 0 0 24 0 z" />
-      </g>
-
-      {/* center person — purple (slightly larger) */}
-      <g fill="#a855e0">
-        <circle cx="100" cy="19" r="9" />
-        <path d="M87 46 a13 13 0 0 0 26 0 z" />
-      </g>
-
-      {/* right person — yellow */}
-      <g fill="#f4bd3a">
-        <circle cx="156" cy="22" r="8" />
-        <path d="M144 46 a12 12 0 0 0 24 0 z" />
-      </g>
+      {/* soft neon glow, then crisp art on top */}
+      <use href={`#${art}`} filter={`url(#${glow})`} opacity="0.75" />
+      <use href={`#${art}`} />
     </svg>
   );
 }
