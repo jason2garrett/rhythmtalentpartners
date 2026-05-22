@@ -44,7 +44,7 @@ export function Hero() {
           className="max-w-4xl font-heading text-5xl font-semibold leading-[1.05] tracking-tight md:text-7xl"
         >
           {HERO.titleLead}
-          <span className="text-brand-gradient mt-2 block">
+          <span className="text-brand-gradient mt-2 block pb-[0.2em]">
             {HERO.titleHighlight}
           </span>
         </motion.h1>

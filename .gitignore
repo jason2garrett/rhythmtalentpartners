@@ -28,6 +28,9 @@ yarn-error.log*
 
 # local claude settings
 .claude/settings.local.json
+# local preview server helpers (machine-specific paths)
+.claude/launch.json
+.claude/dev.sh
 
 # typescript
 *.tsbuildinfo
