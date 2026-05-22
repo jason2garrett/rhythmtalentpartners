@@ -8,7 +8,7 @@ export const SITE = {
 };
 
 export const HERO = {
-  eyebrow: "MedTech Executive Search",
+  eyebrow: "MedTech Executive & Technical Search",
   titleLead: "Building the teams that",
   titleHighlight: "bring medical devices to life",
   subtitle:
