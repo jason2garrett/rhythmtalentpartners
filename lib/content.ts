@@ -10,7 +10,7 @@ export const SITE = {
 export const HERO = {
   eyebrow: "MedTech Executive & Technical Search",
   titleLead: "The Right People.",
-  titleHighlight: "At The Right Time.",
+  titleHighlight: "The Right Time.",
   subtitle:
     "Boutique talent partner for early- and growth-stage medical device, IVD, digital health, and SaMD companies — from concept through commercialization.",
   primaryCta: "Start a Conversation",
