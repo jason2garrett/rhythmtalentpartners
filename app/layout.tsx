@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Heartbeat } from "@/components/Heartbeat";
 
 const inter = localFont({
   src: "./fonts/Inter.woff2",
@@ -41,7 +42,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Heartbeat />
+      </body>
     </html>
   );
 }
