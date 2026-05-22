@@ -68,7 +68,8 @@ export function Logo({
           invert ? "text-white" : "text-foreground"
         }`}
       >
-        Rhythm Talent <span className="text-brand-gradient">Partners</span>
+        <span className="tracking-wide">RHYTHM</span>{" "}
+        <span className="text-brand-gradient">Talent Partners</span>
       </span>
     </span>
   );
