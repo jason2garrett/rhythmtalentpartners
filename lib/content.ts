@@ -29,7 +29,7 @@ export const SERVICES: Service[] = [
       "C-suite, VP, and director-level placements that set the strategic direction for your product and engineering organizations.",
   },
   {
-    title: "Engineering & Technical Leadership",
+    title: "R&D Engineering & Technical Leadership",
     description:
       "Hardware, software, embedded/firmware engineers, and engineering program managers who drive product development from prototype to production.",
   },
