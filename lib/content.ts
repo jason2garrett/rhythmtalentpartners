@@ -107,6 +107,13 @@ export type Testimonial = {
 
 export const TESTIMONIALS: Testimonial[] = [
   {
+    name: "Arvita Tripati, MBA",
+    title: "Healthcare AI Value Creation & Diligence Advisor",
+    date: "May 2026",
+    quote:
+      "I worked with Jason on one of the harder searches I've had to run: finding an expert PhD-level Design Quality leader for a lateral flow assay program during the early days of the pandemic. Jason found the needle in the haystack — someone with the right technical depth, temperament, and level of ownership. He was highly responsive, understood the role beyond surface-level keywords, and brought us a curated slate rather than overwhelming us with resumes. In a highly technical Bay Area MedTech search, he showed up as a true partner rather than just a vendor — and placed senior leaders across functions, including a Director of Engineering, Electrical, and a Director of Clinical, both reporting to our CTO.",
+  },
+  {
     name: "Rebecca Crane",
     title: "CEO & Managing Partner, Crane Medtech Partners",
     date: "March 2026",
