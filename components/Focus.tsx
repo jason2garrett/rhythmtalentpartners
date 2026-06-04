@@ -9,7 +9,7 @@ export function Focus() {
         <SectionHeading
           eyebrow="Areas of Focus"
           title="Where Hiring Is Most Complex"
-          subtitle="Deep specialization across the technologies and disciplines that define modern MedTech — where the right hire is rare and the stakes are highest."
+          subtitle="Deep specialization across the device categories and therapeutic areas that define modern MedTech — where the right hire is rare and the stakes are highest."
         />
 
         <div className="mt-12 flex flex-wrap gap-3">

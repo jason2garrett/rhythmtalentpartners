@@ -50,19 +50,22 @@ export const SERVICES: Service[] = [
   },
 ];
 
+// Device & technology categories, each correlated with a therapeutic area —
+// deliberately NOT functions/departments (those belong with the roles we fill).
 export const FOCUS_AREAS: string[] = [
   "Surgical Robotics",
-  "Wearables / Remote Monitoring",
+  "Cardiac Rhythm Management & Electrophysiology",
+  "Structural Heart & Interventional",
+  "Neuromodulation & Neurostimulation",
+  "Neurovascular & Stroke",
+  "Orthopedics & Spine",
   "In-Vitro Diagnostics (IVD)",
+  "Molecular & Genomic Diagnostics",
+  "Diagnostic Imaging",
+  "Continuous Glucose Monitoring & Diabetes",
+  "Wearables & Remote Patient Monitoring",
   "Digital Health / SaMD",
-  "Combination Products",
-  "Class II Medical Device",
-  "Class III Medical Device",
-  "Clinical Affairs",
-  "Medical Affairs",
-  "AI / ML & Data Science",
-  "Embedded / Firmware",
-  "Engineering Program Management",
+  "Combination Products & Drug Delivery",
 ];
 
 export const PROCESS: { title: string; description: string }[] = [
