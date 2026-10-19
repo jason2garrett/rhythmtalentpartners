@@ -129,7 +129,7 @@ export const TESTIMONIALS: Testimonial[] = [
     title: "Healthcare AI Value Creation & Diligence Advisor",
     date: "May 2026",
     quote:
-      "I worked with Jason on one of the harder searches I've had to run: finding an expert PhD-level Design Quality leader for a lateral flow assay program during the early days of the pandemic. Jason found the needle in the haystack: someone with the right technical depth, temperament, and level of ownership. He was highly responsive, understood the role beyond surface-level keywords, and brought us a curated slate rather than overwhelming us with resumes. In a highly technical Bay Area MedTech search, he showed up as a true partner rather than just a vendor, and placed senior leaders across functions, including a Director of Engineering, Electrical, and a Director of Clinical, both reporting to our CTO.",
+      "Jason found the needle in the haystack on one of the hardest searches I've run: a PhD-level Design Quality leader for a lateral flow assay program in the early days of the pandemic. He understood the role beyond keywords, brought a curated slate instead of a pile of resumes, and showed up as a true partner, not a vendor. He went on to place senior leaders across functions reporting to our CTO.",
   },
   {
     name: "Rebecca Crane",
