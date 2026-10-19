@@ -1,5 +1,7 @@
 import { ImageResponse } from "next/og";
-import { HERO, SITE } from "@/lib/content";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
+import { HERO } from "@/lib/content";
 
 export const alt = "Rhythm Talent Partners: MedTech executive and technical search";
 export const size = { width: 1200, height: 630 };
@@ -7,7 +9,10 @@ export const contentType = "image/png";
 
 const GRADIENT = "linear-gradient(90deg, #2ba4e8 0%, #a855e0 38%, #f0784a 70%, #f4bd3a 100%)";
 
-export default function OpengraphImage() {
+export default async function OpengraphImage() {
+  const svg = await readFile(join(process.cwd(), "public/brand/rhythm-logo-horizontal-white.svg"));
+  const logo = `data:image/svg+xml;base64,${svg.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -24,29 +29,7 @@ export default function OpengraphImage() {
           color: "white",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-          <svg width="64" height="64" viewBox="0 0 64 64">
-            <defs>
-              <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0%" stopColor="#2ba4e8" />
-                <stop offset="38%" stopColor="#a855e0" />
-                <stop offset="70%" stopColor="#f0784a" />
-                <stop offset="100%" stopColor="#f4bd3a" />
-              </linearGradient>
-            </defs>
-            <path
-              d="M8 36 H22 L26 36 L29 31 L33 35 L38 14 L43 50 L47 36 H56"
-              fill="none"
-              stroke="url(#g)"
-              strokeWidth="4.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-          <div style={{ fontSize: 32, fontWeight: 600, letterSpacing: 1 }}>
-            {SITE.name.toUpperCase()}
-          </div>
-        </div>
+        <img src={logo} width={348} height={64} alt="" />
 
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 76, fontWeight: 700, lineHeight: 1.05 }}>

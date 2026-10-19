@@ -7,7 +7,7 @@ const data = {
   "@id": "https://rhythmtalent.com/#business",
   name: SITE.name,
   url: "https://rhythmtalent.com",
-  logo: "https://rhythmtalent.com/icon.svg",
+  logo: "https://rhythmtalent.com/brand/rhythm-logo-square.png",
   image: "https://rhythmtalent.com/opengraph-image",
   description: SITE.tagline,
   email: SITE.email,
