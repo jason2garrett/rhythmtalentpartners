@@ -52,6 +52,17 @@ export function About() {
               </p>
             </div>
 
+            <div className="mt-6 max-w-2xl space-y-4">
+              {ABOUT.story.map((p) => (
+                <p
+                  key={p}
+                  className="font-body text-base leading-relaxed text-muted-foreground"
+                >
+                  {p}
+                </p>
+              ))}
+            </div>
+
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
               {ABOUT.highlights.map((h) => (
                 <li key={h} className="flex items-start gap-3">
