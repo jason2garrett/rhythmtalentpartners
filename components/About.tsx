@@ -39,15 +39,17 @@ export function About() {
               {ABOUT.role}
             </p>
 
-            <div className="mt-6 space-y-4">
-              {ABOUT.bio.map((para) => (
-                <p
-                  key={para}
-                  className="max-w-2xl font-body text-lg leading-relaxed text-muted-foreground"
-                >
-                  {para}
-                </p>
-              ))}
+            <div className="mt-8 flex max-w-2xl gap-5">
+              <span
+                className="w-1 shrink-0 rounded-full"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(180deg, var(--brand-cyan), var(--brand-purple) 38%, var(--brand-orange) 70%, var(--brand-yellow))",
+                }}
+              />
+              <p className="font-heading text-xl leading-relaxed text-foreground md:text-2xl md:leading-relaxed">
+                {ABOUT.bio}
+              </p>
             </div>
 
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">

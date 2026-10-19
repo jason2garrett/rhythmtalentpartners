@@ -23,11 +23,7 @@ export const ABOUT = {
   name: "Jason Garrett",
   role: "Founder & Principal, Rhythm Talent Partners",
   photo: "/images/jason-garrett.jpg",
-  bio: [
-    "Inspired by a family history in cardiology, RHYTHM was built around a simple idea: just as the heart relies on the right rhythm to function, great companies rely on the right people working in sync to innovate, grow, and bring meaningful technologies to market.",
-    "RHYTHM Talent Partners is a specialized recruiting firm focused exclusively on medical device and digital health. I partner with early-stage, growth-stage, and established MedTech companies to build the teams behind life-changing technologies.",
-    "I specialize in recruiting across R&D Engineering, Quality & Regulatory, Clinical, Software & AI, Manufacturing, and Commercial leadership, supporting companies from early product development through commercialization.",
-  ],
+  bio: "Inspired by a family history in cardiology, RHYTHM was built around a simple idea: just as the heart relies on the right rhythm to function, great companies rely on the right people working in sync to innovate, grow, and bring meaningful technologies to market.",
   highlights: [
     "Executive, technical, and hard-to-fill specialist searches",
     "Curated slates, not stacks of resumes",
