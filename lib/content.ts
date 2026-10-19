@@ -24,6 +24,10 @@ export const ABOUT = {
   role: "Founder & Principal, Rhythm Talent Partners",
   photo: "/images/jason-garrett.jpg",
   bio: "Inspired by a family history in cardiology, RHYTHM was built around a simple idea: just as the heart relies on the right rhythm to function, great companies rely on the right people working in sync to innovate, grow, and bring meaningful technologies to market.",
+  story: [
+    "Cardiology runs in my family. My father is a world-renowned preventive cardiologist, and my mother, a cardiovascular nurse, was the first woman to serve on the board of the American College of Cardiology (ACC). I grew up around conversations about patient care and the technology that improves it, and that's where my passion for healthcare began.",
+    "At San Jose State University, I studied Communication Studies and took part in campus dialogues on culture and diversity, which taught me to listen to and connect with people from all walks of life. I've put that to work for nearly a decade in MedTech recruiting. Founders, C-suite executives, VPs, and HR leaders have trusted me with 100+ placements across 50+ MedTech companies, covering every product type and function from concept to commercial launch.",
+  ],
   highlights: [
     "Executive, technical, and hard-to-fill specialist searches",
     "Curated slates, not stacks of resumes",
