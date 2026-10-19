@@ -125,6 +125,20 @@ export type Testimonial = {
 
 export const TESTIMONIALS: Testimonial[] = [
   {
+    name: "Alex Dornfest",
+    title: "Empowering Medical Device Innovation",
+    date: "October 2026",
+    quote:
+      "Jason helped me land my dream job at a startup. He took the time to understand my situation and truly advocated for me during negotiations. He was honest, quick to respond, and made the process feel easy with great advice. He's friendly, well-connected, and experienced. If you're looking for a role in medtech, talk to Jason. You'll be grateful you did.",
+  },
+  {
+    name: "Elaine Zhang",
+    title: "Quality Specialist | ISO 13485 SME",
+    date: "July 2026",
+    quote:
+      "Jason was quick to communicate, kept me updated at every step, and was proactive about following up. I never had to wonder where things stood, which made the whole process much less stressful. He genuinely took the time to understand what I was looking for and offered guidance along the way. If you want a recruiter who is communicative, reliable, and truly cares, I wouldn't hesitate to recommend Jason!",
+  },
+  {
     name: "Arvita Tripati, MBA",
     title: "Healthcare AI Value Creation & Diligence Advisor",
     date: "May 2026",
