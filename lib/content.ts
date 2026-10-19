@@ -100,9 +100,9 @@ export const PROCESS: { title: string; description: string }[] = [
       "Rigorously vetting every candidate for technical depth and cultural fit, so you only meet people ready to make an impact.",
   },
   {
-    title: "Interview Process & Candidate Experience",
+    title: "Delivering & Presenting Candidates",
     description:
-      "Supporting an efficient process with continuous two-way feedback and a best-in-class candidate experience.",
+      "Presenting a curated shortlist with in-depth insight on each candidate, then guiding interviews with continuous two-way feedback.",
   },
   {
     title: "Offer & Negotiation",
