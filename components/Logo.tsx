@@ -38,17 +38,17 @@ export function LogoMark({ className, id = "rt" }: LogoProps) {
             stroke={`url(#${gid})`}
             strokeWidth="3"
           />
-          {/* left person — cyan */}
+          {/* left person, cyan */}
           <g stroke="#2ba4e8" strokeWidth="2.5">
             <circle cx="38" cy="20" r="6.5" />
             <path d="M28 50 C28 34 48 34 48 50" />
           </g>
-          {/* center person — purple (taller) */}
+          {/* center person, purple (taller) */}
           <g stroke="#a855e0" strokeWidth="2.5">
             <circle cx="106" cy="16" r="7.5" />
             <path d="M93 50 C93 31 119 31 119 50" />
           </g>
-          {/* right person — yellow */}
+          {/* right person, yellow */}
           <g stroke="#f4bd3a" strokeWidth="2.5">
             <circle cx="168" cy="20" r="6.5" />
             <path d="M158 50 C158 34 178 34 178 50" />

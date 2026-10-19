@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import { SITE } from "@/lib/content";
 import { Logo } from "@/components/Logo";
 
@@ -20,8 +20,10 @@ export function Footer() {
                 Explore
               </h4>
               <ul className="mt-4 space-y-2.5 font-body text-sm text-white/70">
+                <li><a href="#about" className="hover:text-secondary">About</a></li>
                 <li><a href="#expertise" className="hover:text-secondary">Expertise</a></li>
                 <li><a href="#focus" className="hover:text-secondary">Focus Areas</a></li>
+                <li><a href="#approach" className="hover:text-secondary">Approach</a></li>
                 <li><a href="#process" className="hover:text-secondary">The Process</a></li>
                 <li><a href="#testimonials" className="hover:text-secondary">Testimonials</a></li>
               </ul>
@@ -38,6 +40,17 @@ export function Footer() {
                   >
                     <Mail size={15} />
                     {SITE.email}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={SITE.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 hover:text-secondary"
+                  >
+                    <Linkedin size={15} />
+                    LinkedIn
                   </a>
                 </li>
                 <li className="max-w-xs text-white/60">{SITE.location}</li>

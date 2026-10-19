@@ -19,7 +19,7 @@ export function Expertise() {
         <SectionHeading
           eyebrow="Areas of Expertise"
           title="Executive & Technical Leadership"
-          subtitle="Focused expertise in the roles that are most critical — and hardest to fill — across the medical device product lifecycle."
+          subtitle="Focused expertise in the roles that are most critical, and hardest to fill, across the medical device product lifecycle."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

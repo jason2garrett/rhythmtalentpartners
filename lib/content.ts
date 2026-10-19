@@ -2,6 +2,7 @@ export const SITE = {
   name: "Rhythm Talent Partners",
   shortName: "Rhythm Talent",
   email: "jason@rhythmtalent.com",
+  linkedin: "https://www.linkedin.com/in/jason2garrett",
   location: "Based in the San Francisco Bay Area · Serving clients nationally",
   tagline:
     "Premium boutique search firm specialized in high-impact executive and technical recruitment for growth-stage MedTech companies.",
@@ -12,9 +13,26 @@ export const HERO = {
   titleLead: "The Right People.",
   titleHighlight: "The Right Time.",
   subtitle:
-    "Boutique talent partner for early- and growth-stage medical device, IVD, digital health, and SaMD companies — from concept through commercialization.",
+    "Boutique talent partner for early- and growth-stage medical device, IVD, digital health, and SaMD companies, from concept through commercialization.",
   primaryCta: "Start a Conversation",
-  secondaryCta: "Explore Specialties",
+  secondaryCta: "Explore Expertise",
+};
+
+export const ABOUT = {
+  eyebrow: "About",
+  name: "Jason Garrett",
+  role: "Founder & Principal, Rhythm Talent Partners",
+  photo: "/images/jason-garrett.jpg",
+  bio: [
+    "I started Rhythm Talent Partners because I believe great MedTech hiring is personal. When you work with Rhythm, you work with me. I run every search myself, from our first conversation about what great looks like until well after the offer is signed.",
+    "Most of my clients are early- and growth-stage medical device, IVD, digital health, and SaMD companies looking for the executive and technical leaders who carry a product from concept to commercialization. I take the time to learn the technology, the market, and the team, so the people I introduce fit the role and not just the keywords on a job description.",
+  ],
+  highlights: [
+    "Executive, technical, and hard-to-fill specialist searches",
+    "Curated slates, not stacks of resumes",
+    "An advocate for clients and candidates alike",
+    "Based in the San Francisco Bay Area",
+  ],
 };
 
 export type Service = {
@@ -36,21 +54,21 @@ export const SERVICES: Service[] = [
   {
     title: "Commercialization & Go-to-Market",
     description:
-      "Commercial leaders who translate clinical value into market success — from launch strategy through scaled growth.",
+      "Commercial leaders who translate clinical value into market success, from launch strategy through scaled growth.",
   },
   {
     title: "Quality, Regulatory, Clinical & Reimbursement",
     description:
-      "Specialists who navigate the complex regulatory landscape — ensuring compliance, clearance, and market access for Class II and III devices.",
+      "Specialists who navigate the complex regulatory landscape, ensuring compliance, clearance, and market access for Class II and III devices.",
   },
   {
     title: "AI/ML, Data Science & Cybersecurity",
     description:
-      "Technical talent at the intersection of healthcare and technology — building intelligent, secure software that meets rigorous industry standards.",
+      "Technical talent at the intersection of healthcare and technology, building intelligent, secure software that meets rigorous industry standards.",
   },
 ];
 
-// Device & technology categories, each correlated with a therapeutic area —
+// Device & technology categories, each correlated with a therapeutic area,
 // deliberately NOT functions/departments (those belong with the roles we fill).
 export const FOCUS_AREAS: string[] = [
   "Surgical Robotics",
@@ -77,7 +95,7 @@ export const PROCESS: { title: string; description: string }[] = [
   {
     title: "Talent Calibration & Market Mapping",
     description:
-      "Identifying and mapping the most relevant talent pools with precision — not volume.",
+      "Identifying and mapping the most relevant talent pools with precision, not volume.",
   },
   {
     title: "Targeted Candidate Pipelines",
@@ -114,7 +132,7 @@ export const TESTIMONIALS: Testimonial[] = [
     title: "Healthcare AI Value Creation & Diligence Advisor",
     date: "May 2026",
     quote:
-      "I worked with Jason on one of the harder searches I've had to run: finding an expert PhD-level Design Quality leader for a lateral flow assay program during the early days of the pandemic. Jason found the needle in the haystack — someone with the right technical depth, temperament, and level of ownership. He was highly responsive, understood the role beyond surface-level keywords, and brought us a curated slate rather than overwhelming us with resumes. In a highly technical Bay Area MedTech search, he showed up as a true partner rather than just a vendor — and placed senior leaders across functions, including a Director of Engineering, Electrical, and a Director of Clinical, both reporting to our CTO.",
+      "I worked with Jason on one of the harder searches I've had to run: finding an expert PhD-level Design Quality leader for a lateral flow assay program during the early days of the pandemic. Jason found the needle in the haystack: someone with the right technical depth, temperament, and level of ownership. He was highly responsive, understood the role beyond surface-level keywords, and brought us a curated slate rather than overwhelming us with resumes. In a highly technical Bay Area MedTech search, he showed up as a true partner rather than just a vendor, and placed senior leaders across functions, including a Director of Engineering, Electrical, and a Director of Clinical, both reporting to our CTO.",
   },
   {
     name: "Rebecca Crane",
@@ -224,8 +242,8 @@ export const ENGAGEMENT_TYPES = [
 ];
 
 export const HIRING_TIMELINES = [
-  "Immediate (0–1 month)",
-  "Near-term (1–3 months)",
-  "This quarter (3–6 months)",
+  "Immediate (0-1 month)",
+  "Near-term (1-3 months)",
+  "This quarter (3-6 months)",
   "Exploratory / Planning ahead",
 ];

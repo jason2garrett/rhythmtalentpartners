@@ -16,7 +16,7 @@ export function Process() {
         <SectionHeading
           eyebrow="The Process"
           title="A Disciplined, Transparent Search"
-          subtitle="Every engagement follows a deliberate process — built for clarity, momentum, and lasting placements."
+          subtitle="Every engagement follows a deliberate process, built for clarity, momentum, and lasting placements."
           invert
         />
 

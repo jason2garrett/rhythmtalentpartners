@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 import { Logo } from "@/components/Logo";
 
 const NAV_LINKS = [
+  { label: "About", href: "#about" },
   { label: "Expertise", href: "#expertise" },
   { label: "Focus Areas", href: "#focus" },
   { label: "Approach", href: "#approach" },
@@ -36,7 +37,7 @@ export function Header() {
       }`}
     >
       <div className="container flex h-16 items-center justify-between md:h-20">
-        <a href="#top" aria-label="Rhythm Talent Partners — home">
+        <a href="#top" aria-label="Rhythm Talent Partners home">
           <Logo id="header" invert={!solid} />
         </a>
 

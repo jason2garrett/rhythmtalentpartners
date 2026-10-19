@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 
 const PRINCIPLES = [
   "Dedicated, partner-led engagement on every search",
-  "Precision over volume — curated, calibrated shortlists",
+  "Precision over volume: curated, calibrated shortlists",
   "Deep understanding of your technology, market, and culture",
   "Long-term impact, alignment, and commitment on both sides",
 ];
@@ -18,7 +18,7 @@ export function Approach() {
             <div className="flex items-center gap-3">
               <span className="brand-line" />
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-secondary">
-                Commitment to
+                My Approach
               </span>
             </div>
             <h2 className="mt-5 font-heading text-3xl font-semibold leading-tight tracking-tight text-foreground md:text-4xl">

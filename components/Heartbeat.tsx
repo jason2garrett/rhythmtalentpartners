@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Easter egg: enter the Konami code (↑ ↑ ↓ ↓ ← → ← → B A) anywhere on the site
-// and the whole page finds its rhythm — a proper cardiac lub-dub. We are, after
+// and the whole page finds its rhythm: a proper cardiac lub-dub. We are, after
 // all, in the business of pulses. There's a styled hello in the console too, for
 // anyone curious enough to open the hood. Nothing here ships data or blocks UX.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -90,7 +90,7 @@ export function Heartbeat() {
             🫀 70 BPM and hiring.
           </div>
           <p className="mt-1 text-xs leading-relaxed text-slate-300">
-            You found our pulse. Strong rhythm detected — we should talk.
+            You found our pulse. Strong rhythm detected. We should talk.
           </p>
         </motion.div>
       )}

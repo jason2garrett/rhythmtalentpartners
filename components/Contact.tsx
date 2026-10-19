@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { ArrowUpRight, CheckCircle2, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, CheckCircle2, Linkedin, Mail, MapPin } from "lucide-react";
 import {
   SITE,
   COMPANY_STAGES,
@@ -61,12 +61,12 @@ export function Contact() {
             Building a Team or Exploring Your Next Move?
           </h2>
           <p className="mt-5 max-w-lg font-body text-lg leading-relaxed text-muted-foreground">
-            Tell us about your company and hiring needs — we&apos;ll follow up
+            Tell me about your company and hiring needs, and I&apos;ll follow up
             within one business day.
           </p>
           <p className="mt-5 max-w-lg font-body text-[15px] leading-relaxed text-muted-foreground">
             Whether you&apos;re a startup building your founding team or a scaling
-            company ready to accelerate — I&apos;d welcome the conversation.
+            company ready to accelerate, I&apos;d welcome the conversation.
           </p>
 
           <div className="mt-10 space-y-4">
@@ -78,6 +78,17 @@ export function Contact() {
                 <Mail size={18} />
               </span>
               {SITE.email}
+            </a>
+            <a
+              href={SITE.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 font-body text-sm text-foreground transition-colors hover:text-secondary"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-accent-foreground">
+                <Linkedin size={18} />
+              </span>
+              Connect on LinkedIn
             </a>
             <div className="flex items-center gap-3 font-body text-sm text-muted-foreground">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-accent text-accent-foreground">
@@ -97,7 +108,7 @@ export function Contact() {
                 Request Submitted
               </h3>
               <p className="mt-3 max-w-sm font-body text-[15px] text-muted-foreground">
-                Thank you for reaching out. We&apos;ll be in touch within one
+                Thank you for reaching out. I&apos;ll be in touch within one
                 business day.
               </p>
               <button
@@ -247,6 +258,12 @@ export function Contact() {
                   />
                 )}
               </button>
+
+              {/* Honeypot: hidden from people, but bots fill it in. */}
+              <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
+                <label htmlFor="website">Website</label>
+                <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+              </div>
             </form>
           )}
         </div>

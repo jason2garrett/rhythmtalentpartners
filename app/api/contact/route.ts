@@ -8,6 +8,10 @@ const TO = process.env.CONTACT_TO || "jason@rhythmtalent.com";
 // Until a custom domain is verified in Resend, the shared sandbox sender works.
 const FROM = process.env.CONTACT_FROM || "Rhythm Talent <onboarding@resend.dev>";
 
+const WINDOW_MS = 10 * 60 * 1000;
+const MAX_PER_WINDOW = 5;
+const hits = new Map<string, number[]>();
+
 function esc(value: unknown): string {
   return String(value ?? "")
     .replace(/&/g, "&amp;")
@@ -22,6 +26,24 @@ export async function POST(req: Request) {
   } catch {
     return NextResponse.json({ error: "Invalid request body." }, { status: 400 });
   }
+
+  // Bots fill the hidden "website" field; pretend success so they move on.
+  if (body.website) {
+    return NextResponse.json({ ok: true });
+  }
+
+  // Best-effort per-IP throttle. Serverless instances don't share memory,
+  // so this only slows down bursts hitting the same instance.
+  const ip = (req.headers.get("x-forwarded-for") || "").split(",")[0].trim() || "unknown";
+  const now = Date.now();
+  const recent = (hits.get(ip) || []).filter((t) => now - t < WINDOW_MS);
+  if (recent.length >= MAX_PER_WINDOW) {
+    return NextResponse.json(
+      { error: "Too many requests. Please try again in a few minutes." },
+      { status: 429 }
+    );
+  }
+  hits.set(ip, [...recent, now]);
 
   const companyName = (body.companyName || "").trim();
   const fullName = (body.fullName || "").trim();
@@ -50,10 +72,10 @@ export async function POST(req: Request) {
     ["Company", companyName],
     ["Name", fullName],
     ["Email", email],
-    ["Company Stage", body.companyStage || "—"],
-    ["Device / Technology", body.deviceCategory || "—"],
-    ["Engagement Type", body.engagementType || "—"],
-    ["Hiring Timeline", body.hiringTimeline || "—"],
+    ["Company Stage", body.companyStage || "-"],
+    ["Device / Technology", body.deviceCategory || "-"],
+    ["Engagement Type", body.engagementType || "-"],
+    ["Hiring Timeline", body.hiringTimeline || "-"],
   ];
 
   const html = `
@@ -86,7 +108,7 @@ export async function POST(req: Request) {
     from: FROM,
     to: TO,
     replyTo: email,
-    subject: `New inquiry — ${companyName} (${fullName})`,
+    subject: `New inquiry: ${companyName} (${fullName})`,
     html,
     text,
   });
@@ -94,7 +116,7 @@ export async function POST(req: Request) {
   if (error) {
     console.error("Resend error:", error);
     return NextResponse.json(
-      { error: "Could not send your message. Please email us directly." },
+      { error: "Could not send your message. Please email jason@rhythmtalent.com directly." },
       { status: 502 }
     );
   }
