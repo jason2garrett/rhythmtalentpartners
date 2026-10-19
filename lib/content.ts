@@ -247,9 +247,27 @@ export const DEVICE_CATEGORIES = [
 ];
 
 export const ENGAGEMENT_TYPES = [
-  { value: "retained_search", label: "Retained Search", desc: "Dedicated, exclusive engagement" },
-  { value: "contingency_search", label: "Contingency Search", desc: "Fee upon successful placement" },
-  { value: "talent_advisory", label: "Talent Advisory", desc: "Strategic hiring guidance" },
+  {
+    value: "engaged_search",
+    label: "Engaged Search",
+    desc: "Fee upon successful placement",
+    detail:
+      "A dedicated, partner-led search where I run the full process, from market mapping through offer, and you pay a fee only when the right candidate is hired.",
+  },
+  {
+    value: "part_time_contractors",
+    label: "Part-Time Contractors",
+    desc: "Project-based work, billed monthly by hours worked",
+    detail:
+      "Experienced MedTech professionals engaged on a part-time, project basis to fill a specific need, billed monthly for the hours worked with no long-term commitment.",
+  },
+  {
+    value: "talent_advisory",
+    label: "Talent Advisory",
+    desc: "Market insights, salary benchmarking, targeted competitors",
+    detail:
+      "Strategic guidance before or during a hire: talent market insights, compensation benchmarking to keep your offers competitive, and a targeted map of the competitors where your next hire likely works today.",
+  },
 ];
 
 export const HIRING_TIMELINES = [

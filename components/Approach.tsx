@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
-import { ENGAGEMENT_TYPES } from "@/lib/content";
 import { Reveal } from "@/components/Reveal";
+import { EngagementTypes } from "@/components/EngagementTypes";
 
 const PRINCIPLES = [
   "Dedicated, partner-led engagement on every search",
@@ -48,24 +48,7 @@ export function Approach() {
         </Reveal>
 
         <Reveal delay={0.1}>
-          <div className="grid gap-4">
-            {ENGAGEMENT_TYPES.map((e) => (
-              <div
-                key={e.value}
-                className="rounded-2xl border border-border bg-card p-6 transition-colors hover:border-secondary/40"
-              >
-                <div className="flex items-baseline justify-between gap-4">
-                  <h3 className="font-heading text-lg font-semibold text-foreground">
-                    {e.label}
-                  </h3>
-                  <span className="h-2 w-2 shrink-0 rounded-full bg-secondary" />
-                </div>
-                <p className="mt-1.5 font-body text-sm text-muted-foreground">
-                  {e.desc}
-                </p>
-              </div>
-            ))}
-          </div>
+          <EngagementTypes />
         </Reveal>
       </div>
     </section>
