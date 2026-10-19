@@ -24,8 +24,9 @@ export const ABOUT = {
   role: "Founder & Principal, Rhythm Talent Partners",
   photo: "/images/jason-garrett.jpg",
   bio: [
-    "I started Rhythm Talent Partners because I believe great MedTech hiring is personal. When you work with Rhythm, you work with me. I run every search myself, from our first conversation about what great looks like until well after the offer is signed.",
-    "Most of my clients are early- and growth-stage medical device, IVD, digital health, and SaMD companies looking for the executive and technical leaders who carry a product from concept to commercialization. I take the time to learn the technology, the market, and the team, so the people I introduce fit the role and not just the keywords on a job description.",
+    "Inspired by a family history in cardiology, RHYTHM was built around a simple idea: just as the heart relies on the right rhythm to function, great companies rely on the right people working in sync to innovate, grow, and bring meaningful technologies to market.",
+    "RHYTHM Talent Partners is a specialized recruiting firm focused exclusively on medical device and digital health. I partner with early-stage, growth-stage, and established MedTech companies to build the teams behind life-changing technologies.",
+    "I specialize in recruiting across R&D Engineering, Quality & Regulatory, Clinical, Software & AI, Manufacturing, and Commercial leadership, supporting companies from early product development through commercialization.",
   ],
   highlights: [
     "Executive, technical, and hard-to-fill specialist searches",
