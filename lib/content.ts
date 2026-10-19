@@ -102,17 +102,17 @@ export const PROCESS: { title: string; description: string }[] = [
   {
     title: "Delivering & Presenting Candidates",
     description:
-      "Presenting a curated shortlist with in-depth insight on each candidate, then guiding interviews with continuous two-way feedback.",
+      "Presenting a curated shortlist with in-depth insight on each candidate, so every interview starts with clarity.",
   },
   {
-    title: "Offer & Negotiation",
+    title: "Interview Process & Two-Way Feedback",
     description:
-      "Guiding candidate decisions and offer negotiations to ensure alignment and commitment from both sides.",
+      "Running an efficient interview process with continuous feedback in both directions and a best-in-class candidate experience.",
   },
   {
-    title: "Post-Placement Care",
+    title: "Offer, Close & Onboarding",
     description:
-      "Staying engaged after the hire to ensure a smooth onboarding and long-term success.",
+      "Guiding offer negotiations to a confident yes, then staying engaged through onboarding to ensure long-term success.",
   },
 ];
 
