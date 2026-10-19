@@ -90,14 +90,14 @@ export const PROCESS: { title: string; description: string }[] = [
       "Collaborating with executives, hiring managers, and internal teams to define what great looks like for each role.",
   },
   {
-    title: "Talent Calibration & Market Mapping",
+    title: "Market Mapping & Targeting Top Talent",
     description:
-      "Identifying and mapping the most relevant talent pools with precision, not volume.",
+      "Mapping the competitive landscape to pinpoint and engage the top performers in your space, including those not actively looking.",
   },
   {
-    title: "Targeted Candidate Pipelines",
+    title: "In-Depth Screening & Qualification",
     description:
-      "Delivering curated, high-quality candidates who are aligned with your mission, culture, and technical requirements.",
+      "Rigorously vetting every candidate for technical depth and cultural fit, so you only meet people ready to make an impact.",
   },
   {
     title: "Interview Process & Candidate Experience",
