@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" width="640" height="240" role="img" aria-label="RHYTHM Talent Partners"><defs><linearGradient id="rtp-g" x1="18" y1="0" x2="622" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#62d4f4"/><stop offset="0.3" stop-color="#5fb4ef"/><stop offset="0.4" stop-color="#6a7fe8"/><stop offset="0.5" stop-color="#8a5fe0"/><stop offset="0.6" stop-color="#a95fd2"/><stop offset="0.68" stop-color="#e96c88"/><stop offset="0.78" stop-color="#f5934e"/><stop offset="1" stop-color="#f8c14a"/></linearGradient></defs><g fill="none" stroke="url(#rtp-g)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M18 204 H146 L158 180 L170 204 H226 L250 54 L282 236 L336 150 L360 204 H432 L454 124 L476 230 L506 176 L520 204 H622"/>
+  <circle cx="158" cy="104" r="27"/>
+  <path d="M104 186 C104 162 122 148 144 148"/>
+  <path d="M172 148 C194 148 212 162 212 186"/>
+  <circle cx="344" cy="50" r="30"/>
+  <path d="M290 166 C290 124 314 100 345 100 C376 100 400 124 400 168"/>
+  <circle cx="520" cy="106" r="27"/>
+  <path d="M480 168 C484 156 496 150 510 150"/>
+  <path d="M532 150 C554 150 572 164 572 186"/>
+</g></svg>
