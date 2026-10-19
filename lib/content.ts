@@ -126,7 +126,7 @@ export type Testimonial = {
 export const TESTIMONIALS: Testimonial[] = [
   {
     name: "Alex Dornfest",
-    title: "Empowering Medical Device Innovation",
+    title: "Senior R&D Engineer",
     date: "October 2026",
     quote:
       "Jason helped me land my dream job at a startup. He took the time to understand my situation and truly advocated for me during negotiations. He was honest, quick to respond, and made the process feel easy with great advice. He's friendly, well-connected, and experienced. If you're looking for a role in medtech, talk to Jason. You'll be grateful you did.",
