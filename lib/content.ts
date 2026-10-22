@@ -67,6 +67,11 @@ export const SERVICES: Service[] = [
     description:
       "Technical talent at the intersection of healthcare and technology, building intelligent, secure software that meets rigorous industry standards.",
   },
+  {
+    title: "Program & Project Management",
+    description:
+      "Program and project leaders who align cross-functional teams, manage risk, and keep complex device programs on schedule from concept through launch.",
+  },
 ];
 
 // Device & technology categories, each correlated with a therapeutic area,

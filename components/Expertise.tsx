@@ -4,13 +4,14 @@ import {
   TrendingUp,
   ShieldCheck,
   BrainCircuit,
+  ClipboardList,
 } from "lucide-react";
 import { SERVICES } from "@/lib/content";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal } from "@/components/Reveal";
 
-const ICONS = [Crown, Cpu, TrendingUp, ShieldCheck, BrainCircuit];
-const BRAND_COLORS = ["#2ba4e8", "#a855e0", "#f0784a", "#f4bd3a", "#2ba4e8"];
+const ICONS = [Crown, Cpu, TrendingUp, ShieldCheck, BrainCircuit, ClipboardList];
+const BRAND_COLORS = ["#2ba4e8", "#a855e0", "#f0784a", "#f4bd3a", "#2ba4e8", "#a855e0"];
 
 export function Expertise() {
   return (
