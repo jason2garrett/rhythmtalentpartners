@@ -50,7 +50,7 @@ export const SERVICES: Service[] = [
   {
     title: "R&D Engineering & Product Development",
     description:
-      "Hardware, software, embedded/firmware engineers, and engineering program managers who drive product development from prototype to production.",
+      "Hardware, software, and embedded/firmware engineers who drive product development from prototype to production.",
   },
   {
     title: "Commercialization & Go-to-Market",
@@ -70,7 +70,7 @@ export const SERVICES: Service[] = [
   {
     title: "Program & Project Management",
     description:
-      "Program and project leaders who align cross-functional teams, manage risk, and keep complex device programs on schedule from concept through launch.",
+      "Program and project leaders who unite engineering, quality, and operations around a single plan, keeping milestones, budgets, and design controls on track.",
   },
 ];
 
