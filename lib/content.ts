@@ -53,9 +53,9 @@ export const SERVICES: Service[] = [
       "Hardware, software, and embedded/firmware engineers who drive product development from prototype to production.",
   },
   {
-    title: "Commercialization & Go-to-Market",
+    title: "Commercialization, Business Development & Go-to-Market",
     description:
-      "Commercial leaders who translate clinical value into market success, from launch strategy through scaled growth.",
+      "Commercial and business development leaders who translate clinical value into market success, from launch planning and partnerships through scaled growth.",
   },
   {
     title: "Quality, Regulatory, Clinical & Reimbursement",
