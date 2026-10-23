@@ -50,12 +50,7 @@ export const SERVICES: Service[] = [
   {
     title: "R&D Engineering & Product Development",
     description:
-      "Hardware, software, embedded/firmware engineers, and engineering program managers who drive product development from prototype to production.",
-  },
-  {
-    title: "Commercialization & Go-to-Market",
-    description:
-      "Commercial leaders who translate clinical value into market success, from launch strategy through scaled growth.",
+      "Hardware, software, and embedded/firmware engineers who drive product development from prototype to production.",
   },
   {
     title: "Quality, Regulatory, Clinical & Reimbursement",
@@ -66,6 +61,16 @@ export const SERVICES: Service[] = [
     title: "AI/ML, Data Science & Cybersecurity",
     description:
       "Technical talent at the intersection of healthcare and technology, building intelligent, secure software that meets rigorous industry standards.",
+  },
+  {
+    title: "Program & Project Management",
+    description:
+      "Program and project leaders who unite engineering, quality, and operations around a single plan, keeping milestones, budgets, and design controls on track.",
+  },
+  {
+    title: "Commercialization, Business Development & Go-to-Market",
+    description:
+      "Commercial and business development leaders who translate clinical value into market success, from launch planning and partnerships through scaled growth.",
   },
 ];
 
