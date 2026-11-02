@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import { ArrowUpRight, CheckCircle2, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, CalendarDays, CheckCircle2, Linkedin, Mail, MapPin } from "lucide-react";
 import {
   SITE,
   COMPANY_STAGES,
@@ -61,13 +61,24 @@ export function Contact() {
             Building a Team or Exploring Your Next Move?
           </h2>
           <p className="mt-5 max-w-lg font-body text-lg leading-relaxed text-muted-foreground">
-            Tell me about your company and hiring needs, and I&apos;ll follow up
-            within one business day.
+            Book time directly on my calendar, or tell me about your company and
+            hiring needs and I&apos;ll follow up within one business day.
           </p>
           <p className="mt-5 max-w-lg font-body text-[15px] leading-relaxed text-muted-foreground">
             Whether you&apos;re a startup building your founding team or a scaling
             company ready to accelerate, I&apos;d welcome the conversation.
           </p>
+
+          <a
+            href={SITE.calendar}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-body text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            <CalendarDays size={16} />
+            Book Time on My Calendar
+            <ArrowUpRight size={16} />
+          </a>
 
           <div className="mt-10 space-y-4">
             <a

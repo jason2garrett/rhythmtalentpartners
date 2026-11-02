@@ -3,6 +3,7 @@ export const SITE = {
   shortName: "Rhythm Talent",
   email: "jason@rhythmtalent.com",
   linkedin: "https://www.linkedin.com/in/jason2garrett",
+  calendar: "https://cal.com/jason-garrett-calendar",
   location: "Based in the San Francisco Bay Area · Serving clients nationally",
   tagline:
     "Premium boutique search firm specialized in high-impact executive and technical recruitment for growth-stage MedTech companies.",
