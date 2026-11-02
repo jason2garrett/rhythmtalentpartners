@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Check, Linkedin, Mail } from "lucide-react";
+import { CalendarDays, Check, Linkedin, Mail } from "lucide-react";
 import { ABOUT, SITE } from "@/lib/content";
 import { Reveal } from "@/components/Reveal";
 
@@ -76,10 +76,19 @@ export function About() {
               ))}
             </ul>
 
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-10 flex flex-col flex-wrap gap-3 sm:flex-row">
+              <a
+                href={SITE.calendar}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                <CalendarDays size={16} />
+                Book a Call
+              </a>
               <a
                 href={`mailto:${SITE.email}`}
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
               >
                 <Mail size={16} />
                 Email Jason

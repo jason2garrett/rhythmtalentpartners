@@ -23,20 +23,20 @@ function MarkArt({ id }: { id: string }) {
     <>
       <defs>
         <linearGradient id={gid} x1="18" y1="0" x2="622" y2="0" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor="#62d4f4" />
-          <stop offset="0.3" stopColor="#5fb4ef" />
-          <stop offset="0.4" stopColor="#6a7fe8" />
-          <stop offset="0.5" stopColor="#8a5fe0" />
-          <stop offset="0.6" stopColor="#a95fd2" />
-          <stop offset="0.68" stopColor="#e96c88" />
-          <stop offset="0.78" stopColor="#f5934e" />
-          <stop offset="1" stopColor="#f8c14a" />
+          <stop offset="0" stopColor="#6fe3ff" />
+          <stop offset="0.3" stopColor="#5cc2ff" />
+          <stop offset="0.42" stopColor="#7b8cff" />
+          <stop offset="0.52" stopColor="#a06bff" />
+          <stop offset="0.62" stopColor="#d06ef0" />
+          <stop offset="0.7" stopColor="#ff7a9a" />
+          <stop offset="0.8" stopColor="#ffa057" />
+          <stop offset="1" stopColor="#ffd25a" />
         </linearGradient>
       </defs>
       <g
         fill="none"
         stroke={`url(#${gid})`}
-        strokeWidth="11"
+        strokeWidth="13"
         strokeLinecap="round"
         strokeLinejoin="round"
       >

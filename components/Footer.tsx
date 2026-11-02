@@ -1,4 +1,4 @@
-import { Linkedin, Mail } from "lucide-react";
+import { CalendarDays, Linkedin, Mail } from "lucide-react";
 import { SITE } from "@/lib/content";
 import { Logo } from "@/components/Logo";
 
@@ -33,6 +33,17 @@ export function Footer() {
                 Get in Touch
               </h4>
               <ul className="mt-4 space-y-2.5 font-body text-sm text-white/70">
+                <li>
+                  <a
+                    href={SITE.calendar}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 hover:text-secondary"
+                  >
+                    <CalendarDays size={15} />
+                    Book a Call
+                  </a>
+                </li>
                 <li>
                   <a
                     href={`mailto:${SITE.email}`}
