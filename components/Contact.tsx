@@ -68,6 +68,13 @@ export function Contact() {
             Whether you&apos;re a startup building your founding team or a scaling
             company ready to accelerate, I&apos;d welcome the conversation.
           </p>
+          <p className="mt-3 max-w-lg font-body text-[15px] leading-relaxed text-muted-foreground">
+            Looking for your next role?{" "}
+            <a href="/jobs" className="font-medium text-secondary hover:underline">
+              Browse open roles
+            </a>
+            .
+          </p>
 
           <a
             href={SITE.calendar}

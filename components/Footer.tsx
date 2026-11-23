@@ -20,12 +20,13 @@ export function Footer() {
                 Explore
               </h4>
               <ul className="mt-4 space-y-2.5 font-body text-sm text-white/70">
-                <li><a href="#about" className="hover:text-secondary">About</a></li>
-                <li><a href="#expertise" className="hover:text-secondary">Expertise</a></li>
-                <li><a href="#focus" className="hover:text-secondary">Focus Areas</a></li>
-                <li><a href="#approach" className="hover:text-secondary">Approach</a></li>
-                <li><a href="#process" className="hover:text-secondary">The Process</a></li>
-                <li><a href="#testimonials" className="hover:text-secondary">Testimonials</a></li>
+                <li><a href="/#about" className="hover:text-secondary">About</a></li>
+                <li><a href="/#expertise" className="hover:text-secondary">Expertise</a></li>
+                <li><a href="/#focus" className="hover:text-secondary">Focus Areas</a></li>
+                <li><a href="/#approach" className="hover:text-secondary">Approach</a></li>
+                <li><a href="/#process" className="hover:text-secondary">The Process</a></li>
+                <li><a href="/#testimonials" className="hover:text-secondary">Testimonials</a></li>
+                <li><a href="/jobs" className="hover:text-secondary">Open Roles</a></li>
               </ul>
             </div>
             <div>
