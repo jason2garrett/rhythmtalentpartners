@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { EMAIL_RE, esc, isRateLimited } from "@/lib/server-utils";
 
 export const runtime = "nodejs";
 
@@ -7,17 +8,6 @@ export const runtime = "nodejs";
 const TO = process.env.CONTACT_TO || "jason@rhythmtalent.com";
 // Until a custom domain is verified in Resend, the shared sandbox sender works.
 const FROM = process.env.CONTACT_FROM || "Rhythm Talent <onboarding@resend.dev>";
-
-const WINDOW_MS = 10 * 60 * 1000;
-const MAX_PER_WINDOW = 5;
-const hits = new Map<string, number[]>();
-
-function esc(value: unknown): string {
-  return String(value ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
-}
 
 export async function POST(req: Request) {
   let body: Record<string, string>;
@@ -32,18 +22,12 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  // Best-effort per-IP throttle. Serverless instances don't share memory,
-  // so this only slows down bursts hitting the same instance.
-  const ip = (req.headers.get("x-forwarded-for") || "").split(",")[0].trim() || "unknown";
-  const now = Date.now();
-  const recent = (hits.get(ip) || []).filter((t) => now - t < WINDOW_MS);
-  if (recent.length >= MAX_PER_WINDOW) {
+  if (isRateLimited(req, "contact")) {
     return NextResponse.json(
       { error: "Too many requests. Please try again in a few minutes." },
       { status: 429 }
     );
   }
-  hits.set(ip, [...recent, now]);
 
   const companyName = (body.companyName || "").trim();
   const fullName = (body.fullName || "").trim();
@@ -55,7 +39,7 @@ export async function POST(req: Request) {
       { status: 400 }
     );
   }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+  if (!EMAIL_RE.test(email)) {
     return NextResponse.json({ error: "Please enter a valid email." }, { status: 400 });
   }
 
